@@ -1,0 +1,62 @@
+<html>
+	<head>
+		<title>Sample HTML</title>
+	</head>
+	<body>
+	
+		<script>
+			
+			function show()
+			{
+				//document.getElementById('para1').align="center";
+				document.getElementById('para1').style.textAlign="center";
+				document.getElementById('para1').style.backgroundColor="yellow";
+				document.getElementById('para1').style.border="10px solid red";
+				document.getElementById('para1').style.borderRadius="10px";
+			}
+			
+			function show1()
+			{
+				//document.getElementById('para1').border="1px";
+				document.getElementById('tab').border="1px";
+			}
+			
+			function show2()
+			{
+				document.getElementById('para1').style.display="none";
+			}
+			
+			function show3()
+			{
+				document.getElementById('para1').style.display="block";
+			}
+			
+		</script>
+		
+			<button onclick="show()">BGColor</button>
+			<button onclick="show1()">Border</button>
+			<button onclick="show2()">Hide</button>
+			<button onclick="show3()">SHOW</button>
+			
+			<p id="para1">This is Para</p>
+			
+			
+			<table id="tab">
+				<tr>
+					<td>10</td>
+					<td>10</td>
+					<td>10</td>
+					<td>10</td>
+					<td>10</td>
+				</tr>
+				<tr>
+					<td>10</td>
+					<td>10</td>
+					<td>10</td>
+					<td>10</td>
+					<td>10</td>
+				</tr>
+			</table>
+		
+	</body>
+</html>

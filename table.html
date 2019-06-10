@@ -1,0 +1,89 @@
+<html>
+	<head>
+		<title>Sample HTML</title>
+	</head>
+	<body>
+	
+		<script>
+			
+			var r=5;
+			var c=5;
+			var i,j,x=1;
+			
+			document.write("<table border=1px cellpadding=5px>");
+			for(i=1;i<=r;i++)
+			{
+				document.write("<tr>");
+				for(j=1;j<=c;j++)
+				{
+					document.write("<td>"+x+"</td>");
+					x++;
+				}
+				document.write("</tr>");
+			}
+			document.write("</table>");
+			
+		</script>
+		
+		<br/><br/>
+		
+		<script>
+			
+			var r=5;
+			var c=5;
+			var i,j,x=1;
+			
+			document.write("<table border=1px cellpadding=5px>");
+			for(i=1;i<=r;i++)
+			{
+				document.write("<tr>");
+				for(j=1;j<=c;j++)
+				{
+					if(i%2==0)
+					{
+						document.write("<td> * </td>");
+					}
+					else
+					{
+						document.write("<td>"+x+"</td>");
+					}
+					x++;
+				}
+				document.write("</tr>");
+			}
+			document.write("</table>");
+			
+		</script>
+		
+		<br/><br/>
+		
+		<script>
+			
+			var r=5;
+			var c=5;
+			var i,j,x=1;
+			
+			document.write("<table border=1px cellpadding=5px>");
+			for(i=1;i<=r;i++)
+			{
+				document.write("<tr>");
+				for(j=1;j<=c;j++)
+				{
+					if(i%2==0)
+					{
+						document.write("<td> * </td>");
+					}
+					else
+					{
+						document.write("<td>"+x+"</td>");
+						x++;
+					}
+				}
+				document.write("</tr>");
+			}
+			document.write("</table>");
+			
+		</script>
+		
+	</body>
+</html>

@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<title>Sample HTML</title>
+	</head>
+	<body>
+	
+		<script>
+			
+			function show()
+			{
+				var x=document.getElementById('txt1').value;
+				var y=document.getElementById('txt2').value;
+				var z=x*y;
+				//alert(z);
+				document.getElementById('txt3').value=z;
+			}
+			
+		</script>
+		
+			<input type="text" id="txt1" value="" onkeyup="show()"/>
+			<input type="text" id="txt2" value="" onkeyup="show()"/>
+			<input type="button" id="btn" value="Multiply" onclick="show()"/>
+			<input type="text" id="txt3" value=""/>
+		
+	</body>
+</html>

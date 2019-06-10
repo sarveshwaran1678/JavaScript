@@ -1,0 +1,61 @@
+<html>
+ <head>
+   <title></title>
+ </head>
+ <body>
+   <script>
+   function pass()
+   {  
+       var z= document.getElementById('pwd').value;
+	   var a=document.write(z.length+"<br/>");   
+	  if(a<4)
+         {
+		    document.write('weak');
+		 }
+	else if(a>=4&&a<=10)
+		 {
+		    document.write('medium');
+		 }
+	else(a>10)
+		 {
+		      document.write('strong');
+		 }
+		
+   }
+  
+   </script>
+   
+  <input type="password" id="pwd" name="pwrd" onblur="pass()"/>
+  
+  
+  <br/><br/><br/><br/>
+  <br/><br/><br/><br/>
+  <br/><br/><br/><br/>
+   <script>
+   function pass()
+   {  
+       var z= document.getElementById('pwd').value;
+	   var a=document.write(z.length+"<br/>");   
+	   if(a<4)
+         {
+		    	document.getElementById('pwd').style.backgroundColor="red";
+		 }
+	 else if(a>=4&&a<=10)
+		 {
+		    document.getElementById('pwd').style.backgroundColor="blue";
+		 }
+	 else(a>10)
+		 {
+		      document.getElementById('pwd').style.backgroundColor="green";
+		 }
+		
+   }
+  
+   </script>
+   
+  <input type="password" id="pwd" name="pwrd" onblur="pass()"/>
+ 
+ 
+
+ </body>
+</html>

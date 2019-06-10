@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<title>Sample HTML</title>
+	</head>
+	<body>
+	
+	State :
+	<select id="one" onchange="abc()">
+		<option value="">Select State</option>
+		<option value="1">Karnataka</option>
+		<option value="2">TamilNadu</option>
+		<option value="3">Kerala</option>
+		<option value="4">AP</option>
+		<option value="5">UP</option>
+	</select>
+	
+	City :
+	<select id="two">
+		<option value="">Select City</option>
+		
+	</select>
+	
+	<script>
+		function abc()
+		{
+			var s=document.getElementById('one').value;
+			if(s==1)
+			{
+				document.getElementById('two').innerHTML="<option>Bangalore</option><option>Mysore</option>";
+			}
+			else if(s==2)
+			{
+				document.getElementById('two').innerHTML="<option>Chennai</option><option>Madurai</option>";
+			}
+		}
+	</script>
+		
+	</body>
+</html>

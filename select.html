@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<title>Sample HTML</title>
+	</head>
+	<body>
+	
+		
+		<input type="text" id="txt" onselect="show()"/>
+		
+		<p id="para">...</p>
+		
+		<script>
+			function show()
+			{
+				//var x=document.getElementById('txt');
+				
+				var s=document.getElementById('txt').selectionStart;
+				var e=document.getElementById('txt').selectionEnd;
+				
+				var str=document.getElementById('txt').value;
+				
+				document.getElementById('para').innerHTML=str.slice(s,e);
+			}
+			
+		</script>
+		
+		
+	</body>
+</html>

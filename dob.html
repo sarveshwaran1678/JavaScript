@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<title>Sample HTML</title>
+	</head>
+	<body>
+	
+		
+		Year :
+		<select>
+			<option value="">Year</option>
+			<script>
+				d=new Date();
+				for(i=1947;i<=d.getFullYear();i++)
+				{
+					document.write("<option>"+i+"</option>");
+				}
+			</script>
+		</select>
+		
+		Month :
+		<select>
+			<option value="">Month</option>
+			<script>
+				var mn=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+				for(i=0;i<mn.length;i++)
+				{
+					document.write("<option>"+mn[i]+"</option>");
+				}
+			</script>
+		</select>
+		
+	</body>
+</html>

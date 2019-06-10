@@ -1,0 +1,72 @@
+<html>
+	<head>
+		<title>Sample HTML</title>
+	</head>
+	<body>
+	
+		<button onclick="one()">Prev</button>
+		<button onclick="two()">Next</button>
+		
+		<br/><br/>
+		
+		<img src="pic/1.jpg" id="abc"/>
+		
+		<script>
+		var g=1;
+		var op=1;
+		var t;
+		var tt;
+		
+		setInterval("hide()",4000);
+		
+			function two()
+			{
+				if(g==7)
+				{
+					g=1;					
+				}
+				hide();				
+				//document.getElementById('abc').src="pic/"+g+".jpg";
+			}
+			
+			function hide()
+			{
+				t=setTimeout("hide()",100);
+				op=op-0.1;
+				document.getElementById('abc').style.opacity=op;
+				if(op<=0)
+				{
+					clearTimeout(t);
+					g++;
+					document.getElementById('abc').src="pic/"+g+".jpg";
+					show();
+				}
+			}
+			
+			function show()
+			{
+				tt=setTimeout("show()",100);
+				op=op+0.1;
+				document.getElementById('abc').style.opacity=op;
+				if(op>=1)
+				{
+					clearTimeout(tt);
+					//hide();
+				}
+			}
+			
+			function one()
+			{
+				g--;
+				if(g==0)
+				{
+					g=6;					
+				}
+				document.getElementById('abc').src="pic/"+g+".jpg";
+			}
+		</script>
+	
+		
+		
+	</body>
+</html>

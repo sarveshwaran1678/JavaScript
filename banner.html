@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title>Sample HTML</title>
+	</head>
+	<body>
+	
+		<button onclick="one()">Prev</button>
+		<button onclick="two()">Next</button>
+		
+		<br/><br/>
+	
+		<img src="pic/1.jpg" id="abc"/>
+		
+		<script>
+		var arr=["abc.jpg","def.jpg","klm.jpg"];
+			var g=1;
+			function two()
+			{
+				g++;
+				if(g==7)
+				{
+					g=1;					
+				}
+				document.getElementById('abc').src="pic/"+g+".jpg";
+			}
+			
+			function one()
+			{
+				g--;
+				if(g==0)
+				{
+					g=6;					
+				}
+				document.getElementById('abc').src="pic/"+g+".jpg";
+			}
+		</script>
+	
+		
+		
+	</body>
+</html>

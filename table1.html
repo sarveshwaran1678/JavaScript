@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<title>Sample HTML</title>
+	</head>
+	<body>
+	
+		
+		<input type="text" id="txt1" onkeyup="show()"/>
+		<input type="text" id="txt2" onkeyup="show()"/>
+		<button onclick="show()">Click</button>
+		<br/><br/>
+		<div id="box"></div>
+		
+		<script>
+			
+			function show()
+			{
+				var r=document.getElementById('txt1').value;
+				var c=document.getElementById('txt2').value;
+				
+				var i,j,x=1;
+				
+				var tmp="<table border=1px cellpadding=5px>";
+				for(i=1;i<=r;i++)
+				{
+					tmp=tmp+"<tr>";
+					for(j=1;j<=c;j++)
+					{
+						tmp=tmp+"<td>"+x+"</td>";
+						x++;
+					}
+					tmp=tmp+"</tr>";
+				}
+				tmp=tmp+"</table>";
+				
+				document.getElementById("box").innerHTML=tmp;
+			}
+			
+		</script>
+		
+		
+	</body>
+</html>

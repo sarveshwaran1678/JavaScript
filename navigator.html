@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<title>Sample HTML</title>
+	</head>
+	<body>
+	
+		<script>
+			
+			document.write(navigator.appName+"<br/>");
+			document.write(navigator.appVersion+"<br/>");
+			document.write(navigator.language+"<br/>");
+			document.write(navigator.product+"<br/>");
+			document.write(navigator.onLine+"<br/>");
+			document.write(navigator.platform+"<br/>");
+			document.write(navigator.userAgent+"<br/>");
+			document.write(navigator.cookieEnabled+"<br/>");
+			
+			
+			var x=navigator.userAgent;
+			
+			if(x.match("Firefox"))
+			{
+				document.bgColor="red";
+			}
+			
+			if(x.match("MSIE"))
+			{
+				document.bgColor="blue";
+			}
+			
+			
+			if(x.match("Chrome"))
+			{
+				document.bgColor="green";
+			}
+			
+			
+			
+			
+		</script>
+		
+	</body>
+</html>

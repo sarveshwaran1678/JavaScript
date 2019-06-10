@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<title>Sample HTML</title>
+	</head>
+	<body>
+	
+		<input type="text" class="txt" /> <br/><br/>
+		<input type="text" class="txt" /> <br/><br/>
+		<input type="text" class="txt" /> <br/><br/>
+		<input type="text" class="txt" /> <br/><br/>
+		<input type="text" class="txt" /> <br/><br/>
+		
+		
+		<button onclick="show()">Click</button>
+		
+		
+		<p id="msg"></p>
+		
+		<script>
+			function show()
+			{
+				var x=document.getElementsByClassName('txt');
+				//document.getElementById('msg').innerHTML=x[1].value;
+				var tmp="";
+				for(i=0;i<x.length;i++)
+				{
+					tmp=tmp+x[i].value+"|";
+				}
+				
+				document.getElementById('msg').innerHTML=tmp;
+			}
+		</script>
+		
+		
+	</body>
+</html>

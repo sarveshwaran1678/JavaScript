@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<title>Sample HTML</title>
+	</head>
+	<body>
+	
+		<form name="abc">
+		<input type="checkbox" name="clr" value="Red"/>Red
+		<input type="checkbox" name="clr" value="Green"/>Green
+		<input type="checkbox" name="clr" value="Blue"/>Blue
+		<input type="checkbox" name="clr" value="Yellow"/>Yellow
+		<input type="checkbox" name="clr" value="Orange"/>Orange
+		<br/><br/>
+		</form>
+		<button onclick="show()">Click Here</button>
+		
+		<script>
+			function show()
+			{
+				var r="Your fav colors are ";
+				
+				for(i=0;i<document.abc.clr.length;i++)
+				{
+					if(document.abc.clr[i].checked==true)
+					{
+						r=r+document.abc.clr[i].value;
+						r=r+", ";
+					}
+				}
+				
+				//document.bgColor=r;
+				//alert(r);
+				document.getElementById('msg').innerHTML=r.slice(0,r.length-2)+".";
+			}
+		</script>
+		
+		<p id="msg"></p>
+	
+		
+		
+	</body>
+</html>

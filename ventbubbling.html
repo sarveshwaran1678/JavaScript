@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<title>Sample HTML</title>
+		<style>
+			#one{height:150px;width:150px;padding:100px;background:red;}
+			#two{height:150px;width:150px;background:yellow;}
+		</style>
+	</head>
+	<body>
+	
+		
+		<script>
+		
+			var c=1;
+			function show()
+			{
+				document.getElementById('msg').innerHTML=c;
+				c++;
+			}
+			
+		</script>
+		
+		<div id="one" onmouseover="show()">
+			<div id="two">
+			
+			</div>
+		</div>
+		
+		<p id="msg"></p>
+		
+		
+		
+	</body>
+</html>

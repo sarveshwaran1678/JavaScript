@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title>Sample HTML</title>
+	</head>
+	<body>
+	
+		
+		<input type="radio" name="clr" class="clrr" value="Red"/>Red
+		<input type="radio" name="clr" class="clrr" value="Green"/>Green
+		<input type="radio" name="clr" class="clrr" value="Blue"/>Blue
+		<input type="radio" name="clr" class="clrr" value="Yellow"/>Yellow
+		<input type="radio" name="clr" class="clrr" value="Orange"/>Orange
+		<br/><br/>
+		
+		<button onclick="show()">Click Here</button>
+		
+		<script>
+			function show()
+			{
+				var r;
+				var x=document.getElementsByClassName('clrr');
+				
+				for(i=0;i<document.getElementsByClassName('clrr').length;i++)
+				{
+					if(x[i].checked==true)
+					{
+						var r=x[i].value;
+						break;
+					}
+				}
+				
+				document.bgColor=r;
+				alert("Yur fav color is "+r);
+				
+			}
+		</script>
+	
+		
+		
+	</body>
+</html>

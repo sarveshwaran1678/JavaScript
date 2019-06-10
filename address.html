@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<title>Sample HTML</title>
+		<style>
+			textarea{resize:none;height:100px;width:500px;}
+		</style>
+	</head>
+	<body>
+	
+		
+		<script>
+		
+			function show(x)
+			{
+				//var x=document.getElementById('txt').value;
+				
+				var t=20;
+				var r=t-x.length;
+				//document.getElementById('msg').innerHTML=r+" chars left";
+				document.getElementById('msg').innerHTML=r;
+				if(x.length>=20)
+				{
+					//document.getElementById('txt').readOnly=true;
+					document.getElementById('txt').value=x.slice(0,19);
+				}
+			}
+			
+		</script>
+		
+		<textarea id="txt" onkeyup="show(this.value)" ></textarea>
+		
+		<p><span id="msg">20</span> chars left</p>
+		
+		
+		
+		
+		
+	</body>
+</html>

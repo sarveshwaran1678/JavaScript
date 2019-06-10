@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title>Sample HTML</title>
+	</head>
+	<body>
+	
+		<input type="text" id="txt1" /> <br/><br/>
+		
+		
+		<button onclick="show()">Click</button>
+		
+		
+		<p id="msg"></p>
+		
+		<script>
+			function show()
+			{
+				var x=document.getElementById('txt1').value;
+				document.getElementById('msg').innerHTML=x;
+			}
+		</script>
+		
+		
+	</body>
+</html>

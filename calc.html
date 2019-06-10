@@ -1,0 +1,61 @@
+<html>
+	<head>
+		<title>Sample HTML</title>
+	</head>
+	<body>
+	
+		<script>
+			
+			
+			
+		</script>
+		
+		<input type="text" id="txt1" />
+		<input type="text" id="txt2" />
+		<br/><br/>
+		
+		<input type="button" id="btn1" value="Add" onclick="one()"/>
+		<input type="button" id="btn2" value="Sub" onclick="two()" />
+		<input type="button" id="btn3" value="Mul" onclick="three()" />
+		<input type="button" id="btn4" value="Div" onclick="four()" />
+		<br/><br/>
+		<input type="text" id="txt3" />
+		
+		<script>
+		
+		
+			function one()
+			{
+				var x=parseInt(document.getElementById('txt1').value);
+				var y=Number(document.getElementById('txt2').value);
+				var z=x+y;
+				document.getElementById('txt3').value=z;
+			}
+			
+			function two()
+			{
+				var x=document.getElementById('txt1').value;
+				var y=document.getElementById('txt2').value;
+				var z=x-y;
+				document.getElementById('txt3').value=z;
+			}
+			
+			function three()
+			{
+				var x=document.getElementById('txt1').value;
+				var y=document.getElementById('txt2').value;
+				var z=x*y;
+				document.getElementById('txt3').value=z;
+			}
+			
+			function four()
+			{
+				var x=document.getElementById('txt1').value;
+				var y=document.getElementById('txt2').value;
+				var z=x/y;
+				document.getElementById('txt3').value=z;
+			}
+		</script>
+		
+	</body>
+</html>

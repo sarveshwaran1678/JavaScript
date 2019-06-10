@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<title>Sample HTML</title>
+		<style>
+			#one{height:150px;width:400px;background:skyblue;}
+		</style>
+	</head>
+	<body>
+	
+		
+		<script>
+		
+			function show(p)
+			{
+				//alert(p);
+				var a=p.clientX;
+				var b=p.clientY;
+				var tmp="Coordination X: "+a+", Y:"+b;
+				document.getElementById('msg').innerHTML=tmp;
+			}
+			
+		</script>
+		
+		<div id="one" onmousemove="show(event)">
+			
+		</div>
+		
+		<p id="msg"></p>
+		
+		
+		
+	</body>
+</html>

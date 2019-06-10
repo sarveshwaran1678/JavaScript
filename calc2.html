@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<title>Sample HTML</title>
+	</head>
+	<body>
+	
+		<script>
+			
+			
+			
+		</script>
+		
+		<input type="text" id="txt1" />
+		<input type="text" id="txt2" />
+		<br/><br/>
+		
+		<input type="button" id="btn1" value="Add" onclick="one('+')"/>
+		<input type="button" id="btn2" value="Sub" onclick="one('-')" />
+		<input type="button" id="btn3" value="Mul" onclick="one('*')" />
+		<input type="button" id="btn4" value="Div" onclick="one('/')" />
+		<br/><br/>
+		<input type="text" id="txt3" />
+		
+		<script>
+		
+		
+			function one(a)
+			{
+				var x=parseInt(document.getElementById('txt1').value);
+				var y=Number(document.getElementById('txt2').value);
+				document.getElementById('txt3').value=eval(x+a+y);
+			}
+			
+		</script>
+		
+	</body>
+</html>

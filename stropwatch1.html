@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<title>Sample HTML</title>
+	</head>
+	<body>
+	
+	<script>
+	var c=0;
+	
+	function init()
+	{
+		setInterval("one()",1000);
+	}
+	
+		function one()
+		{
+			document.getElementById('txt').value=c;
+			c++;
+		}
+		
+		function two()
+		{
+			
+		}
+		
+	</script>
+		
+		
+		<button onclick="init()">START</button>
+			<input type="text" id="txt" />
+		<button onclick="two()">STOP</button>
+		
+	</body>
+</html>

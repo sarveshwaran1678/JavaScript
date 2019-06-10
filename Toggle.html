@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<title>Sample HTML</title>
+		<style>
+			#box{height:200px;width:200px;background:red;}
+		</style>
+	</head>
+	<body>
+	
+		
+		<script>
+		
+			var c=1;
+			
+			function show()
+			{
+				/*
+				if(c%2==0)
+				{
+					document.getElementById('box').style.display="block";
+				}
+				else
+				{
+					document.getElementById('box').style.display="none";
+				}
+				c++;
+				*/
+				
+				if(document.getElementById('box').style.display=="none")
+				{
+					document.getElementById('box').style.display="block";
+				}
+				else
+				{
+					document.getElementById('box').style.display="none"
+				}
+				
+			}
+			
+		</script>
+		
+		<button onclick="show()">Toggle</button>
+		
+		<p id="box"></p>
+		
+	</body>
+</html>

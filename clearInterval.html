@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<title>Sample HTML</title>
+	</head>
+	<body>
+	
+	<script>
+	var t;
+		function one()
+		{
+			t=setTimeout("alert('Hai')",3000);
+			//t=setInterval("alert('Hai')",2000);
+		}
+		
+		function two()
+		{
+			clearTimeout(t);
+			//clearInterval(t);
+		}
+		
+	</script>
+		
+		
+		<button onclick="one()">START</button>
+		<button onclick="two()">STOP</button>
+		
+	</body>
+</html>

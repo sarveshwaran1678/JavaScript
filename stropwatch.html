@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<title>Sample HTML</title>
+	</head>
+	<body>
+	
+	<script>
+	var c=0;
+		function one()
+		{
+			document.getElementById('txt').value=c;
+			c++;
+			//setTimeout("one()",1000);
+			setInterval("one()",1000);
+		}
+		
+		function two()
+		{
+			
+		}
+		
+	</script>
+		
+		
+		<button onclick="one()">START</button>
+			<input type="text" id="txt" />
+		<button onclick="two()">STOP</button>
+		
+	</body>
+</html>

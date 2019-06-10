@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<title>Sample HTML</title>
+		<style>
+			#wrap{padding:10px;border:1px solid red;}
+			#box div{margin:5px 0px;}
+		</style>
+	</head>
+	<body>
+	
+		<div id="wrap">
+		<h1>Add Passenger Details</h1>
+		<button onclick="one()">Add Memeber</button>
+			<div id="box">
+				
+			</div>
+		</div>
+		
+		<script>
+			
+			var c=1;
+		
+			function one()
+			{
+				var parEl=document.getElementById('box');
+				var idname="my"+c;
+				
+				var newEl=document.createElement("div");
+				newEl.setAttribute("id",idname);
+				newEl.innerHTML="Name : <input type='text' /> Age : <input type='text' /> <button onclick=\"del('"+idname+"')\">Remove "+idname+"</button>";
+				parEl.append(newEl);			
+				c++;
+			}
+			
+			function del(i)
+			{
+				//document.getElementById(i).remove("div");
+				document.getElementById(i).remove();
+			}
+			
+			
+		</script>
+		
+	</body>
+</html>
